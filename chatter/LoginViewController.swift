@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
@@ -27,8 +27,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signInButtonTapped(sender: AnyObject) {
-        let email = emailTextField.text
-        let username = split(email, {$0=="@"}, allowEmptySlices: false)[0]
+        let username = usernameTextField.text
         let password = passwordTextField.text
         
         PFUser.logInWithUsernameInBackground(username, password: password) {
@@ -43,13 +42,11 @@ class LoginViewController: UIViewController {
 
     @IBAction func signUpButtonTapped(sender: AnyObject) {
         var user = PFUser()
-        let email = emailTextField.text
-        let username = split(email, {$0=="@"}, allowEmptySlices: false)[0]
+        let username = usernameTextField.text
         let password = passwordTextField.text
 
         user.username = username
         user.password = password
-        user.email = email
         
         user.signUpInBackgroundWithBlock {
             (succeeded: Bool!, error: NSError!) -> Void in
