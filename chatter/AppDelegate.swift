@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        Parse.setApplicationId("DXsvTSLgsKT03gSSqy6V5KbLwVpgfEjmEsKzzQUP", clientKey: "BXAzmCJhMtIVWhLVEiKIMzPCA5XI0Nt9NwvAOPVd")
+        let appID = NSBundle.mainBundle().objectForInfoDictionaryKey("APPLICATION_ID") as String
+        let clientKey = NSBundle.mainBundle().objectForInfoDictionaryKey("CLIENT_KEY") as String
+        Parse.setApplicationId(appID, clientKey: clientKey)
+        
         return true
     }
 
