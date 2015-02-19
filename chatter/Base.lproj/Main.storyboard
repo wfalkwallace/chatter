@@ -183,11 +183,29 @@
                         <outlet property="passwordTextField" destination="YG8-J1-9GO" id="QDj-iV-qWd"/>
                         <outlet property="signInButton" destination="cFF-eQ-Np0" id="Ygb-xt-pMq"/>
                         <outlet property="signUpButton" destination="b7h-Z6-eWO" id="a6s-vj-BHa"/>
+                        <segue destination="s6e-QE-sab" kind="presentation" identifier="com.falk-wallace.LoginSegue" id="rW9-Ia-pm0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="589.5" y="387"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="6cE-iP-6cD">
+            <objects>
+                <viewController id="s6e-QE-sab" customClass="ChatViewController" customModule="chatter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="21p-N1-D2o"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z0T-vK-yWv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="27H-1n-3PT">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wd-aM-9Xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420.5" y="387"/>
         </scene>
     </scenes>
 </document>

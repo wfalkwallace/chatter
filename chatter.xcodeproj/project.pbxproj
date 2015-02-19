@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		87C19F1570E8DAE9416B5064 /* libPods-chatter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87085213C0DBA5BF5F962E1B /* libPods-chatter.a */; };
 		E620F8131A9564BA004899F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F8121A9564BA004899F1 /* LoginViewController.swift */; };
+		E620F8161A956D95004899F1 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F8151A956D95004899F1 /* ChatViewController.swift */; };
 		E6A783151A93E35D00D0A3AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A783141A93E35D00D0A3AB /* AppDelegate.swift */; };
 		E6A7831A1A93E35D00D0A3AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A783181A93E35D00D0A3AB /* Main.storyboard */; };
 		E6A7831C1A93E35D00D0A3AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A7831B1A93E35D00D0A3AB /* Images.xcassets */; };
@@ -33,6 +34,7 @@
 		E620F80E1A95604D004899F1 /* Chatter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chatter-Bridging-Header.h"; sourceTree = "<group>"; };
 		E620F8111A956121004899F1 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		E620F8121A9564BA004899F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E620F8151A956D95004899F1 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		E6A7830F1A93E35D00D0A3AB /* chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A783131A93E35D00D0A3AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6A783141A93E35D00D0A3AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		E620F8141A9564C5004899F1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E620F8151A956D95004899F1 /* ChatViewController.swift */,
 				E620F8121A9564BA004899F1 /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E620F8131A9564BA004899F1 /* LoginViewController.swift in Sources */,
+				E620F8161A956D95004899F1 /* ChatViewController.swift in Sources */,
 				E6A783151A93E35D00D0A3AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

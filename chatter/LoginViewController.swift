@@ -34,9 +34,9 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsernameInBackground(username, password: password) {
             (user: PFUser!, error: NSError!) -> Void in
             if user != nil {
-                println("user: \(user)")
+                self.performSegueWithIdentifier("com.falk-wallace.LoginSegue", sender: self)
             } else {
-                println("error: \(error)")
+                println("Error: \(error)")
             }
         }
     }
@@ -54,10 +54,10 @@ class LoginViewController: UIViewController {
         user.signUpInBackgroundWithBlock {
             (succeeded: Bool!, error: NSError!) -> Void in
             if error == nil {
-                println("SUCCESS")
+                self.performSegueWithIdentifier("com.falk-wallace.LoginSegue", sender: self)
             } else {
                 let errorString = error.userInfo!["error"] as NSString
-                println(errorString)
+                println("Error: \(errorString)")
             }
         }
     }
