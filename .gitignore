@@ -17,4 +17,4 @@ DerivedData
 *.ipa
 *.xcuserstate
 Pods/
-secrets.xcconfig
+Config.xcconfig

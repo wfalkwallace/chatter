@@ -43,5 +43,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>APPLICATION_ID</key>
+	<string>$(APPLICAITON_ID)</string>
+	<key>CLIENT_KEY</key>
+	<string>$(CLIENT_KEY)</string>
 </dict>
 </plist>
